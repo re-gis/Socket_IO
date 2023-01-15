@@ -15,6 +15,10 @@ app.listen(2000,()=>{
     console.log("Server listening port 2000...");
 })
 
+io.on('connection', (socket) =>{
+    console.log("User connected:" + socket.id);
+})
+
 
 
 
